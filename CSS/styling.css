@@ -1,0 +1,80 @@
+/* styling.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.TitleWeb{
+    display: flex;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #555;
+}
+.Image{
+    width: 10%;
+    height: 10%;
+    margin: 0 2% 0 2%;
+}
+#student-info {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.choose-toppings{
+    display: flex;   
+}
+.choose-toppings div{
+    padding: 0 1% 0 1%;
+}
+.choose-crust{
+    margin-top: 2%;
+    display: flex;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select, input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button.submitBtn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add more styles as needed */

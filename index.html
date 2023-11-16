@@ -14,13 +14,17 @@
     <script src="./costume.js" defer></script>
 </head>
 <body>
-    <h1>COMP1073 – Client-Side JavaScript</h1>
+    <div class="TitleWeb">
+        <h1>DragonSlice Lin Guini's</h1>
+        <img src="./CSS/Img.jpg" alt="Img" class="Image">
+    </div>
+    
+
     <h2>Assignment 4</h2>
     <p id="student-info">Student ID: 200533728 <br> Name: Nicolas Millan</p>
 
-
     <h2>Select Your Pizza</h2>
-    <form action="order.php" method="post">
+    <div class="form">
         <label for="pizza-size">Choose Pizza Size:</label>
         <select id="pizza-size" name="size">
             <option value="small">Small</option>
@@ -28,40 +32,43 @@
             <option value="large">Large</option>
         </select>
         <br>
-        <label>Choose Toppings:</label>
-        <div>
-            <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
-            <label for="pepperoni">Pepperoni</label>
+        <div class="choose-toppings">
+            <label>Choose Toppings:</label>
+            <div class="pepperoni">
+                <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+            </div>
+            <div class="Ham">
+                <input type="checkbox" id="Ham" name="toppings[]" value="Ham">
+                <label for="Ham">Ham</label>
+            </div>
+            <div class="Bacon">
+                <input type="checkbox" id="Bacon" name="toppings[]" value="Bacon">
+                <label for="Bacon">Bacon</label>
+            </div>
+            <div class="mushrooms">
+                <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+            </div>
+            <div class="olives">
+                <input type="checkbox" id="olives" name="toppings[]" value="olives">
+                <label for="olives">Olives</label>
+            </div>
+            <div class="sausage">
+                <input type="checkbox" id="sausage" name="toppings[]" value="sausage">
+                <label for="sausage">Sausage</label>
+            </div>
         </div>
-        <div>
-            <input type="checkbox" id="Ham" name="toppings[]" value="Ham">
-            <label for="Ham">Ham</label>
+        
+        <div class="choose-crust">
+            <label for="crust">Choose Crust:</label>
+            <input type="radio" id="thin" name="crust" value="thin">
+            <label for="thin">Thin</label>
+            <input type="radio" id="pan" name="crust" value="pan">
+            <label for="pan">Pan</label>
+            <input type="radio" id="deep-dish" name="crust" value="deep-dish">
+            <label for="deep-dish">Deep Dish</label>
         </div>
-        <div>
-            <input type="checkbox" id="Bacon" name="toppings[]" value="Bacon">
-            <label for="Bacon">Bacon</label>
-        </div>
-        <div>
-            <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
-            <label for="mushrooms">Mushrooms</label>
-        </div>
-        <div>
-            <input type="checkbox" id="olives" name="toppings[]" value="olives">
-            <label for="olives">Olives</label>
-        </div>
-        <div>
-            <input type="checkbox" id="sausage" name="toppings[]" value="sausage">
-            <label for="sausage">Sausage</label>
-        </div>
-        <br>
-        <label for="crust">Choose Crust:</label>
-        <input type="radio" id="thin" name="crust" value="thin">
-        <label for="thin">Thin</label>
-        <input type="radio" id="pan" name="crust" value="pan">
-        <label for="pan">Pan</label>
-        <input type="radio" id="deep-dish" name="crust" value="deep-dish">
-        <label for="deep-dish">Deep Dish</label>
-        <br><br>
 
         <!-- Delivery Information Section -->
         <h2>Delivery Information</h2>
@@ -75,7 +82,11 @@
         <input type="tel" id="phone" name="phone" required>
         <br><br>
 
-        <input type="submit" value="Order Pizza">
-    </form>
+        <div>
+            <button class="submitBtn">Place Order</button>
+        </div>
+        <p class="PizzaText">Text</p>
+        <p class="OrderText">Text</p>
+    </div>
 </body>
 </html>
